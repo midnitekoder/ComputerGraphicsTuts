@@ -57,3 +57,61 @@ setcolor(GREEN);
 	getch();
 	closegraph();
 }
+
+
+
+line(100,100,200,100);
+	line(100,100,50,186);
+        line(200,100,150,186);
+line(50,185,150,185);
+floodfill(101,101,RED);
+setcolor(BLUE);
+line(50,186,150,186);
+line(50,186,50,286);
+line(150,186,150,286);
+line(149,186,149,286);
+line(50,286,150,286);
+floodfill(51,200,BLUE);
+setcolor(GREEN);
+ line(201,100,151,186);
+line(200,100,200,200);
+line(151,186,151,286);
+line(150,286,200,200);
+floodfill(152,200,GREEN);
+setcolor(WHITE);
+setlinestyle(DASHED_LINE,0,NORM_WIDTH);
+line(100,100,100,200);
+line(100,200,50,286);
+line(100,200,200,200);
+
+
+
+
+initgraph(&gd,&gm,NULL);
+setcolor(RED);
+	line(100+i,100+i,200+i,100+i);
+	line(100+i,100+i,50+i,186+i);
+        line(200+i,100+i,150+i,186+i);
+line(50+i,185+i,150+i,185+i);
+floodfill(101+i,101+i,RED);
+setcolor(BLUE);
+line(50+i,186+i,150+i,186+i);
+line(50+i,186+i,50+i,286+i);
+line(150+i,186+i,150+i,286+i);
+line(149+i,186+i,149+i,286+i);
+line(50+i,286+i,150+i,286+i);
+floodfill(51+i,200+i,BLUE);
+setcolor(GREEN);
+ line(201+i,101+i,151+i,187+i);
+line(200+i,100+i,200+i,200+i);
+line(151+i,186+i,151+i,286+i);
+line(150+i,286+i,200+i,200+i);
+floodfill(155+i,201+i,GREEN);
+setcolor(WHITE);
+setlinestyle(DASHED_LINE,0,NORM_WIDTH);
+line(100+i,100+i,100+i,200+i);
+line(100+i,200+i,50+i,286+i);
+line(100+i,200+i,200+i,200+i);
+i++;
+delay(200);
+cleardevice();

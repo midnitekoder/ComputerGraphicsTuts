@@ -2,6 +2,20 @@
 #include<graphics.h>
 #include<math.h>
 #define PI 3.14
+
+void cir(int x, int y, int r)
+{
+	int i,j;
+	for(i=x-r;i<=x+r;i++)
+	{
+		j=y+sqrt(r*r-(i-x)*(i-x));
+		putpixel(i,j,3);
+		j=y-sqrt(r*r-(i-x)*(i-x));
+		putpixel(i,j,3);
+
+	}
+}
+
 int main()
 {
 	int gd=DETECT,gm,x1,x2,y1,y2,x,y;
@@ -33,7 +47,7 @@ setcolor(GREEN);
 	floodfill(150,350,2);
 	//floodfill(150,250, 2);
 	setcolor(BLUE);
-	circle(x1+200,y1+150,50);
+	cir(x1+200,y1+150,50);
 	for(I=0;I<=360;I+=15)
  {
    x=50*cos(I*PI/180);
